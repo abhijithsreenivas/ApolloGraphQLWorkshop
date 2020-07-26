@@ -1,0 +1,19 @@
+<Query query = {query}>
+    {({data, loading}) => {
+        if(loading) return <p> Loading...</p>
+        return (
+            <div> 
+                <ul>
+                    {data.users.map(({id, name, car})) => {
+                        const list = <li key={id}>{name}
+                        </li>
+                    }
+                </ul>
+
+            </div>
+        )
+    }
+    
+    
+    }
+</Query>
